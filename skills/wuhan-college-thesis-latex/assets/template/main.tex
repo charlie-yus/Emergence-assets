@@ -1,0 +1,133 @@
+\documentclass{whcthesis}
+\WhcSetup{title={企业数字化与创新质量研究},subtitle={文经管类排版功能示例},english-title={Corporate Digitalization and Innovation Quality: A Layout Demonstration},author={示例姓名},english-author={Example Name},student-id={示例学号},class={示例班级},cohort={示例届次},major={示例专业},school={示例学院},supervisor={示例教师},supervisor-title={},date={}}
+\hypersetup{pdftitle={武汉学院文经管类论文排版示例},pdfauthor={}}
+\newcommand\demopar{本段仅用于检查文经管类论文模板的排版，不包含实际论文的实证结论。正文采用小四号中文字体以及 Times New Roman 英文字体，首行缩进两个汉字，段落两端对齐。不同字号、表格宽度、公式编号和页面转换需要分别验证，自动编译成功并不意味着学校格式已经全部验收。}
+\begin{document}
+\WhcMakeCover
+\WhcMakeDeclaration
+\WhcMakeTitlePage
+\begin{whcabstract}[cn]{数字化；企业创新；排版模板}
+本示例用于展示武汉学院文经管类本科毕业论文的页面与组件，采用独立的封面、作者声明、题名署名、中英文摘要和目录，并在正文、结语、参考文献、致谢与附录之间保留正确的页序关系。模板分别设置正文与各级标题的字号、字体、缩进和间距，表格标题位于表格上方，插图标题位于插图下方，图表和公式连续编号。跨页表保留重复标题行，长公式在等号或运算符处换行，脚注使用带圈序号并按页重新计数。参考文献保留首行与后续行不同的缩进，资料来源采用楷体。示例文字不作为研究结果；完成时间、手写签名和致谢内容留空。样式核验需要结合学校明文、原始示例和实际PDF，不能将转换产生的异常分页或网格膨胀作为学校要求。
+\end{whcabstract}
+\begin{whcabstract}[en]{Digitalization; Corporate Innovation; Thesis Layout}
+This demonstration presents the components of an undergraduate thesis in humanities, economics, and management at Wuhan College. The cover, declaration, title page, abstracts, contents, body, references, acknowledgements, and appendices use separate layout rules. Tables, figures, equations, and page numbers are generated from the source. The text is a layout specimen and contains no empirical finding. Dates and handwritten signatures are intentionally left blank. Compilation, automated checks, and visual inspection provide different kinds of evidence and should not be treated as interchangeable.
+\end{whcabstract}
+\WhcTableOfContents
+\WhcMainMatter
+\WhcMajor{引\hspace{2\ccwd}论}[引论]
+\demopar\footnote{本脚注用于核对小五号正文及带圈序号，不代表文献证据。}\par
+\demopar\footnote{同页的第二条脚注应显示为②，下一页第一条应重新显示为①。}\par
+\section{文献综述与理论分析}
+\subsection{研究主题与概念界定}
+\demopar
+\subsubsection{三级标题示例}
+\demopar
+\paragraph{四级标题示例}
+\demopar
+\subsection{测量与研究设计}
+\demopar
+\clearpage
+\demopar\footnote{本页第一条脚注应为①；页脚序号仍延续正文。}
+\section{表格、插图与公式}
+\subsection{普通表格与资料来源}
+表\ref{tab:ordinary}用于检查三线表、表名及楷体来源。表中数字为排版测试值。
+\begin{table}[htbp]
+\centering\caption{变量说明与排版测试}\label{tab:ordinary}
+\WhcTableFont
+\begin{tabularx}{\linewidth}{@{}lYY@{}}
+\toprule 变量&说明&口径\\\midrule
+Disclosure&文字披露指标&示例文本，不作为研究结论\\
+Asset&资产配置强度&示例单位为元\\
+Quality&创新质量指标&示例比例范围为0～1\\\bottomrule
+\end{tabularx}
+\WhcSource{资料来源：模板中的匿名排版示例。长来源说明应在同一表格下换行，并保留首行缩进与后续行悬挂；不要将来源移到下一页。}
+\end{table}
+\subsection{连续编号与长公式}
+见\ref{eq:one}与\ref{eq:two}。公式标签自动生成，不手写已格式化的编号。
+\begin{equation}\label{eq:one}
+Y_{i,t+1}=\alpha+\beta_1 D_{it}+\beta_2 A_{it}+\mu_i+\lambda_t+\varepsilon_{it}.
+\end{equation}
+\begin{equation}\label{eq:two}
+\begin{aligned}
+Y_{i,t+1}={}&\alpha+\beta_1 D_{it}+\beta_2 A_{it}+\beta_3 SOE_{it}\\
+ &+\beta_4 A_{it}\times SOE_{it}+\boldsymbol{\gamma}'\mathbf X_{it}+\mu_i+\lambda_t+\varepsilon_{it}.
+\end{aligned}
+\end{equation}
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}[c][32mm][c]{.75\linewidth}\centering 示例图形区域\\研究问题\quad $\longrightarrow$\quad 数据与测量\quad $\longrightarrow$\quad 结果\end{minipage}}
+\caption{研究框架示例}\label{fig:framework}
+\WhcSource{资料来源：本模板绘制。图形、图题及资料来源应位于同一页。}
+\end{figure}
+\subsection{跨页表格}
+表\ref{tab:long}用于验证跨页表的列标题重复、续表提示和末页来源。列宽按版心扣除单元格内边距后分配，禁止将过宽表整体缩成小字。
+\begingroup\WhcTableFont
+\begin{longtable}{@{}p{.13\linewidth}p{.29\linewidth}p{\dimexpr.58\linewidth-4\tabcolsep\relax}@{}}
+\caption{跨页表格功能测试}\label{tab:long}\\
+\toprule 编号&项目&说明\\\midrule\endfirsthead
+\multicolumn{3}{c}{\songti\bfseries\fontsize{12bp}{\whcbodybaseline}\selectfont 表\thetable\hspace{2\ccwd}跨页表格功能测试（续）}\\
+\toprule 编号&项目&说明\\\midrule\endhead
+\midrule\multicolumn{3}{r}{下页续表}\\\endfoot
+\bottomrule\multicolumn{3}{@{}p{\linewidth}@{}}{\WhcSource{资料来源：仅为验证跨页表组件而生成的示例。来源随表末页显示。}}\\\endlastfoot
+1&测试项目1&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+2&测试项目2&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+3&测试项目3&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+4&测试项目4&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+5&测试项目5&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+6&测试项目6&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+7&测试项目7&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+8&测试项目8&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+9&测试项目9&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+10&测试项目10&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+11&测试项目11&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+12&测试项目12&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+13&测试项目13&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+14&测试项目14&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+15&测试项目15&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+16&测试项目16&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+17&测试项目17&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+18&测试项目18&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+19&测试项目19&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+20&测试项目20&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+21&测试项目21&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+22&测试项目22&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+23&测试项目23&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+24&测试项目24&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+25&测试项目25&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+26&测试项目26&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+27&测试项目27&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+28&测试项目28&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+29&测试项目29&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+30&测试项目30&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+31&测试项目31&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+32&测试项目32&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+33&测试项目33&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+34&测试项目34&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+35&测试项目35&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+36&测试项目36&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+37&测试项目37&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+38&测试项目38&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+39&测试项目39&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+40&测试项目40&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+41&测试项目41&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+42&测试项目42&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+43&测试项目43&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+44&测试项目44&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+45&测试项目45&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+46&测试项目46&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+47&测试项目47&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+48&测试项目48&本行用于验证长表分页、表头重复及列宽。该内容不属于真实研究数据。\\
+\end{longtable}\endgroup
+\WhcMajor{结\hspace{2\ccwd}语}[结语]
+\demopar
+\begin{whcreferences}
+\WhcBibItem{中文题录占位（非学术文献，不可引用）。本条仅检验首行缩进、跨行悬挂以及五号字体；实际使用时逐条替换为已核定的真实题录，不自动生成作者、期刊、年份、页码或DOI。}
+\WhcBibItem{English reference placeholder (not a publication; do not cite). This paragraph only tests long entries, hanging indentation, punctuation, and mixed-language typesetting. Replace it with a verified original reference; no author, journal, year, page range, or DOI is supplied.}
+\end{whcreferences}
+\WhcAcknowledgements
+% Intentionally blank: the author has not supplied acknowledgements.
+\WhcAppendices
+\WhcAppendix{排版组件核对示例}
+\demopar
+\begin{equation}\label{eq:appendix}x+y=z.\end{equation}
+\end{document}

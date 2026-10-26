@@ -1,0 +1,28 @@
+% Font references only: no licensed font binaries are distributed.
+% Default: calibrated local macOS mapping; strictfonts: school-named Windows fonts.
+\setmainfont{Times New Roman}
+\newcommand\whcbodybaseline{19.95bp}
+\newcommand\whcreferencebaseline{14.2bp}
+\newcommand\whcdeclarationbaseline{27.75bp}
+\newcommand\whccoverbaseline{27.75bp}
+\ifwhcstrictfonts
+ \setCJKmainfont[AutoFakeBold=2]{SimSun}
+ \setCJKfamilyfont{zhsong}[AutoFakeBold=2]{SimSun}
+ \setCJKsansfont[AutoFakeBold=1.5]{SimHei}
+ \setCJKfamilyfont{zhhei}[AutoFakeBold=1.5]{SimHei}
+ \setCJKfamilyfont{zhfs}[AutoFakeBold=2]{FangSong}
+ \setCJKfamilyfont{zhkai}{KaiTi}
+ \typeout{WHC-FONT: school-named fonts; recheck line-spacing calibration.}
+\else
+ \setCJKmainfont[Path=/System/Library/AssetsV2/com_apple_MobileAsset_Font8/259e8f5a322e8dae602d51ac00aefb3d6b05c224.asset/AssetData/,FontIndex=0,BoldFont=SimSong.ttc,BoldFeatures={FontIndex=1}]{SimSong.ttc}
+ \setCJKfamilyfont{zhsong}[Path=/System/Library/AssetsV2/com_apple_MobileAsset_Font8/259e8f5a322e8dae602d51ac00aefb3d6b05c224.asset/AssetData/,FontIndex=0,BoldFont=SimSong.ttc,BoldFeatures={FontIndex=1}]{SimSong.ttc}
+ \setCJKsansfont[AutoFakeBold=1.5]{Heiti SC}
+ \setCJKfamilyfont{zhhei}[AutoFakeBold=1.5]{Heiti SC}
+ \setCJKfamilyfont{zhfs}[Path=/System/Library/AssetsV2/com_apple_MobileAsset_Font8/1b6b2f148cdf17dd0d788706c83c61ca1998c3a6.asset/AssetData/,AutoFakeBold=2]{STFANGSO.ttf}
+ \setCJKfamilyfont{zhkai}[Path=/System/Library/AssetsV2/com_apple_MobileAsset_Font8/88d6cc32a907955efa1d014207889413890573be.asset/AssetData/,FontIndex=0]{Kaiti.ttc}
+ \typeout{WHC-FONT-MAPPING: Apple SimSong (not Microsoft SimSun), Heiti SC, STFangsong, Kaiti SC.}
+\fi
+\providecommand\songti{\CJKfamily{zhsong}}
+\providecommand\heiti{\CJKfamily{zhhei}}
+\providecommand\fangsong{\CJKfamily{zhfs}}
+\providecommand\kaishu{\CJKfamily{zhkai}}
