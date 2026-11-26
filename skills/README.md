@@ -56,9 +56,20 @@
 | 路线 | Skill | 地址 |
 |---|---|---|
 | A1 | `smj-data-analysis`：面板数据、内生性 | https://github.com/brycewang-stanford/Awesome-Journal-Skills |
-| A2 | `amj-data-analysis`：测量效度、共同方法偏差、SEM | 同上 |
-| B2 | `asq-data-analysis`：质性资料编码、从资料到理论 | 同上 |
+| A1 | `econometrics-skill`：17 种因果推断方法（OLS/PSM/IV/DID/RDD，含中文指南） | https://github.com/xiaomihu1992/econometrics-skill |
+| A1 | `Auto-Empirical-Research-Skills` / `StatsPAI`：Stata/R/Python 实证全流程（建议只抽装 `plugins/` 核心流，勿全仓导入） | https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills |
+| A1 | `claude-code-my-workflow`（CSDID 作者 Sant'Anna）：主张审查、可复现审计、魔鬼代言人与审稿裁决 | https://github.com/pedrohcgs/claude-code-my-workflow |
+| A1 | `stata-skill` / `stata-ai-fusion`：规范 Stata 编码与 `reghdfe`/`coefplot`/出表参考库 | https://github.com/dylantmoore/stata-skill |
+| A1 | `empiricalwiki` / `Econ-Variation`：经管实证 10 类实体文献知识图谱与国内准自然实验案例库 | https://github.com/Lambenthan/empiricalwiki |
+| A2 | `amj-data-analysis`：测量效度、共同方法偏差、SEM | https://github.com/brycewang-stanford/Awesome-Journal-Skills |
+| B2 | `asq-data-analysis`：质性资料编码、从资料到理论 | https://github.com/brycewang-stanford/Awesome-Journal-Skills |
+| 全部 | `Humanizer-zh` / `anti-defensive-writing-Skill` / `asd-ste100-skill`：中文去 AI 味、发布会原则反防御写作与清晰表达 | https://github.com/op7418/Humanizer-zh |
+| 全部 | `PaperForge` / `literature-research-assistant`：中文主动式论文精读与 WoS 共被引/突现分析 | https://github.com/FeijiangHan/PaperForge |
+| 全部 | `integrity-auditor` / `Anti-Autoresearch`：真引用抓取、实测数字标注与全稿一致性取证审计 | https://github.com/ai4s-research/ai4s-skills |
+| 全部 | `planning-with-files` / `compass-skills` / `HERO-Anti-OverDefense`：长会话外挂记忆、任务对齐与防编程 Agent 过度防御 | https://github.com/OthmanAdi/planning-with-files |
 | 全部 | `nsfc-figure`：框架图、技术路线图 | https://github.com/njzjz/nsfc-agent-skills |
+
+> 完整 60+ 经 GitHub API 实测核验的开源仓库与排雷说明（如实测剔除韩语专用 `im-not-ai`），见上游仓库 `Emergence/toolkit/archives/github-repos-verified.md`。
 
 ## 三　来源与许可
 
